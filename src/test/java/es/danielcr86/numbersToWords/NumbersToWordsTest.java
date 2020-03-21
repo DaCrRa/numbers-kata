@@ -25,7 +25,15 @@ public class NumbersToWordsTest
       { 6, "six" },
       { 7, "seven" },
       { 8, "eight" },
-      { 9, "nine" }
+      { 9, "nine" },
+      { 20, "twenty" },
+      { 30, "thirty" },
+      { 40, "forty" },
+      { 50, "fifty" },
+      { 60, "sixty" },
+      { 70, "seventy" },
+      { 80, "eighty" },
+      { 90, "ninety" }
     });
   }
 
