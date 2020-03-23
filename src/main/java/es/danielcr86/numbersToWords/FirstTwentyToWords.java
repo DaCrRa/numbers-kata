@@ -3,7 +3,7 @@ package es.danielcr86.numbersToWords;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class UnitsToWords
+public class FirstTwentyToWords
 {
   private static final ArrayList<String> WORDS = new ArrayList(Arrays.asList(
     "zero",
@@ -15,7 +15,17 @@ public class UnitsToWords
     "six",
     "seven",
     "eight",
-    "nine"
+    "nine",
+    "ten",
+    "eleven",
+    "twelve",
+    "thirteen",
+    "fourteen",
+    "fifteen",
+    "sixteen",
+    "seventeen",
+    "eighteen",
+    "nineteen"
   ));
 
   public String convert(int inputNumber)

@@ -11,7 +11,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.core.Is.is;
 
 @RunWith(Parameterized.class)
-public class UnitsToWordsTest
+public class FirstTwentyToWordsTest
 {
   @Parameterized.Parameters
   public static Collection<Object[]> data()
@@ -26,7 +26,17 @@ public class UnitsToWordsTest
       {6, "six"},
       {7, "seven"},
       {8, "eight"},
-      {9, "nine"}
+      {9, "nine"},
+      {10, "ten"},
+      {11, "eleven"},
+      {12, "twelve"},
+      {13, "thirteen"},
+      {14, "fourteen"},
+      {15, "fifteen"},
+      {16, "sixteen"},
+      {17, "seventeen"},
+      {18, "eighteen"},
+      {19, "nineteen"}
     });
   }
 
@@ -34,7 +44,7 @@ public class UnitsToWordsTest
 
   private String expectedWords;
 
-  public UnitsToWordsTest(int inputNumber, String expectedWords)
+  public FirstTwentyToWordsTest(int inputNumber, String expectedWords)
   {
     this.inputNumber = inputNumber;
     this.expectedWords = expectedWords;
@@ -42,6 +52,6 @@ public class UnitsToWordsTest
 
   @Test
   public void convertsNumbersToWords() {
-    assertThat(new NumbersToWords().convert(inputNumber), is(expectedWords));
+    assertThat(new FirstTwentyToWords().convert(inputNumber), is(expectedWords));
   }
 }
